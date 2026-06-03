@@ -3,6 +3,7 @@ import { Design02Page } from '../pages/Design02Page'
 import { Design03Page } from '../pages/Design03Page'
 import { Design04Page } from '../pages/Design04Page'
 import { Design05Page } from '../pages/Design05Page'
+import type { DesignRoute } from '../types'
 
 const design01Prompt = `# Design Direction
 
@@ -169,7 +170,7 @@ Signature detail: CRT scanlines
 ## Frontend Design Prompt
 Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
 
-export const designs = [
+export const designs: DesignRoute[] = [
   {
     slug: 'design-01',
     navLabel: 'Design 01',

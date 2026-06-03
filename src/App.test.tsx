@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { App } from './App'
 import { designs } from './data/designs'
 
-function renderAt(path) {
+function renderAt(path: string) {
   return render(
     <MemoryRouter initialEntries={[path]}>
       <App />

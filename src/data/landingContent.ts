@@ -1,3 +1,5 @@
+import type { LandingContent } from '../types'
+
 export const landingContent = {
   productName: 'Random Design MCP',
   eyebrow: 'Model Context Protocol server for design direction',
@@ -34,4 +36,4 @@ export const landingContent = {
     { value: '1', label: 'shared product narrative' },
     { value: 'N', label: 'future batches' },
   ],
-}
+} satisfies LandingContent

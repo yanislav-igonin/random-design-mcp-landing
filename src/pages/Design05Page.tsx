@@ -1,6 +1,7 @@
 import { landingContent } from '../data/landingContent'
+import type { DesignPageProps } from '../types'
 
-export function Design05Page({ design }) {
+export function Design05Page({ design }: DesignPageProps) {
   return (
     <main className="alien-grid min-h-[calc(100vh-73px)] bg-[#12110f] text-[#e8ded2]">
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">

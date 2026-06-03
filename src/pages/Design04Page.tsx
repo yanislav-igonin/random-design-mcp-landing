@@ -1,6 +1,7 @@
 import { landingContent } from '../data/landingContent'
+import type { DesignPageProps } from '../types'
 
-export function Design04Page({ design }) {
+export function Design04Page({ design }: DesignPageProps) {
   return (
     <main className="aero-bg min-h-[calc(100vh-73px)] bg-white text-[#16202a]">
       <div className="ticker border-b border-slate-200 bg-white/80 py-2 font-mono text-xs uppercase tracking-[0.2em] text-slate-500">

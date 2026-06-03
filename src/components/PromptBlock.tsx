@@ -1,4 +1,8 @@
-export function PromptBlock({ prompt }) {
+type PromptBlockProps = {
+  prompt: string
+}
+
+export function PromptBlock({ prompt }: PromptBlockProps) {
   return (
     <section
       id="generation-prompt"

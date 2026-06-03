@@ -1,6 +1,7 @@
 import { landingContent } from '../data/landingContent'
+import type { DesignPageProps } from '../types'
 
-export function Design03Page({ design }) {
+export function Design03Page({ design }: DesignPageProps) {
   return (
     <main className="blueprint-bg min-h-[calc(100vh-73px)] bg-[#1b1104] text-[#ffd27a]">
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">

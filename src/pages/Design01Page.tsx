@@ -1,6 +1,7 @@
 import { landingContent } from '../data/landingContent'
+import type { DesignPageProps } from '../types'
 
-export function Design01Page({ design }) {
+export function Design01Page({ design }: DesignPageProps) {
   return (
     <main className="design-one min-h-[calc(100vh-73px)] overflow-hidden bg-[#050101] text-[#fff1f1]">
       <section className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-20">

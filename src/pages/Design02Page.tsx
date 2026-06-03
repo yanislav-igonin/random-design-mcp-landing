@@ -1,6 +1,7 @@
 import { landingContent } from '../data/landingContent'
+import type { DesignPageProps } from '../types'
 
-export function Design02Page({ design }) {
+export function Design02Page({ design }: DesignPageProps) {
   return (
     <main className="design-two min-h-[calc(100vh-73px)] overflow-hidden bg-[#fff1f8] text-[#2d1738]">
       <div className="ticker border-y-4 border-[#2d1738] bg-[#ffef66] py-2 font-mono text-xs font-black uppercase tracking-[0.2em] text-[#2d1738]">
