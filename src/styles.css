@@ -1,0 +1,211 @@
+@import "tailwindcss";
+
+:root {
+  color: #111827;
+  background: #f7f4ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+.diagonal-red-grid {
+  background-image:
+    linear-gradient(135deg, rgba(255, 49, 49, 0.24) 1px, transparent 1px),
+    radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.12), transparent 26%),
+    radial-gradient(circle at 20% 80%, rgba(255, 49, 49, 0.24), transparent 34%);
+  background-size: 36px 36px, 100% 100%, 100% 100%;
+}
+
+.window-panel {
+  clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 22px 100%, 0 calc(100% - 22px));
+}
+
+.arched-panel {
+  border-radius: 999px 999px 20px 20px;
+  position: relative;
+}
+
+.arched-panel::before,
+.window-panel::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+}
+
+.design-two {
+  background-image:
+    radial-gradient(circle at 15% 12%, rgba(255, 111, 216, 0.4), transparent 20%),
+    radial-gradient(circle at 86% 28%, rgba(94, 234, 212, 0.5), transparent 20%),
+    repeating-linear-gradient(0deg, rgba(45, 23, 56, 0.045) 0, rgba(45, 23, 56, 0.045) 1px, transparent 1px, transparent 4px);
+}
+
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-track {
+  display: inline-block;
+  min-width: 100%;
+  animation: ticker 18s linear infinite;
+}
+
+.masonry-pop > :nth-child(2) {
+  transform: translateY(24px) rotate(1deg);
+}
+
+.masonry-pop > :nth-child(3) {
+  transform: translateY(-6px) rotate(-1deg);
+}
+
+.pop-card {
+  border-radius: 28px 10px 34px 12px;
+}
+
+.blueprint-bg {
+  background-image:
+    linear-gradient(rgba(255, 178, 56, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 178, 56, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 20% 10%, rgba(255, 178, 56, 0.18), transparent 24%);
+  background-size: 42px 42px, 42px 42px, 100% 100%;
+}
+
+.magnetic-link,
+.technical-tile,
+.catalog-cell {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.magnetic-link:hover,
+.technical-tile:hover,
+.catalog-cell:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 1px rgba(255, 178, 56, 0.55), 0 18px 40px rgba(255, 178, 56, 0.12);
+}
+
+.diagram-blob {
+  background:
+    radial-gradient(circle at 35% 40%, rgba(255, 178, 56, 0.45), transparent 18%),
+    radial-gradient(circle at 65% 52%, rgba(255, 178, 56, 0.22), transparent 22%),
+    linear-gradient(135deg, transparent 46%, rgba(255, 178, 56, 0.5) 47%, transparent 49%);
+  border-radius: 42% 58% 48% 52%;
+}
+
+.aero-bg {
+  background-image:
+    radial-gradient(circle at 15% 18%, rgba(186, 230, 253, 0.8), transparent 28%),
+    radial-gradient(circle at 82% 20%, rgba(221, 214, 254, 0.7), transparent 24%),
+    linear-gradient(180deg, #ffffff, #eef7ff);
+}
+
+.particle-field {
+  position: relative;
+  overflow: hidden;
+}
+
+.particle-field::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background-image:
+    radial-gradient(circle, rgba(14, 165, 233, 0.34) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(99, 102, 241, 0.28) 0 1px, transparent 2px);
+  background-position: 0 0, 22px 18px;
+  background-size: 72px 72px, 54px 54px;
+  animation: float-particles 16s linear infinite;
+  pointer-events: none;
+}
+
+.particle-field > * {
+  position: relative;
+}
+
+.expanding-panel {
+  transition: transform 220ms ease, border-radius 220ms ease, box-shadow 220ms ease;
+}
+
+.expanding-panel:hover {
+  border-radius: 1rem;
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 24px 70px rgba(14, 165, 233, 0.16);
+}
+
+.hand-border {
+  border: 2px solid #16202a;
+  box-shadow:
+    5px 4px 0 rgba(15, 23, 42, 0.12),
+    inset 0 0 0 1px rgba(14, 165, 233, 0.18);
+}
+
+.alien-grid {
+  background-image:
+    repeating-linear-gradient(0deg, rgba(200, 121, 74, 0.08) 0, rgba(200, 121, 74, 0.08) 1px, transparent 1px, transparent 5px),
+    radial-gradient(circle at 80% 8%, rgba(122, 61, 32, 0.36), transparent 28%);
+}
+
+.steel-panel {
+  background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.08), transparent 22%, rgba(255, 255, 255, 0.04) 55%, transparent);
+}
+
+.line-art-mark {
+  background:
+    linear-gradient(90deg, transparent 49%, rgba(200, 121, 74, 0.7) 50%, transparent 51%),
+    linear-gradient(0deg, transparent 49%, rgba(200, 121, 74, 0.7) 50%, transparent 51%),
+    radial-gradient(circle at center, transparent 32%, rgba(200, 121, 74, 0.75) 33%, rgba(200, 121, 74, 0.75) 34%, transparent 35%),
+    radial-gradient(circle at center, transparent 58%, rgba(200, 121, 74, 0.45) 59%, rgba(200, 121, 74, 0.45) 60%, transparent 61%);
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float-particles {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(72px, 36px, 0);
+  }
+}
+
+@media (max-width: 640px) {
+  .masonry-pop > :nth-child(n) {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
