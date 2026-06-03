@@ -19,7 +19,7 @@ export const landingContent = {
     },
     {
       title: 'Fast batch exploration',
-      body: 'Generate five variants now, add five more later, and compare them through stable routes.',
+      body: 'Generate ten variants now, add the next batch later, and compare them through stable routes.',
     },
     {
       title: 'Built for AI builders',
@@ -32,7 +32,7 @@ export const landingContent = {
     'Build the same product story through a new visual system.',
   ],
   stats: [
-    { value: '5', label: 'initial generated variants' },
+    { value: '10', label: 'generated variants' },
     { value: '1', label: 'shared product narrative' },
     { value: 'N', label: 'future batches' },
   ],

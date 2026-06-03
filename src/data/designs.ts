@@ -3,6 +3,11 @@ import { Design02Page } from '../pages/Design02Page'
 import { Design03Page } from '../pages/Design03Page'
 import { Design04Page } from '../pages/Design04Page'
 import { Design05Page } from '../pages/Design05Page'
+import { Design06Page } from '../pages/Design06Page'
+import { Design07Page } from '../pages/Design07Page'
+import { Design08Page } from '../pages/Design08Page'
+import { Design09Page } from '../pages/Design09Page'
+import { Design10Page } from '../pages/Design10Page'
 import type { DesignRoute } from '../types'
 
 const design01Prompt = `# Design Direction
@@ -170,6 +175,171 @@ Signature detail: CRT scanlines
 ## Frontend Design Prompt
 Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
 
+const design06Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five additional incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: 1970s retro
+Style: Blueprint
+Mood: Cinematic
+Palette: Neon city night
+Typography: Mixed grotesk and display
+Shape language: Torn-paper edges
+Texture: VHS noise
+Density: Balanced
+Layout: Strict Swiss grid
+Imagery: 3D chrome objects
+Motion: Layered depth movement
+Tone: Technical
+Contrast: Muted with one loud accent
+Border treatment: Dashed technical borders
+Lighting: Volumetric haze
+Material: Newsprint
+Signature detail: Ornamental dividers
+
+## Constraints
+- Avoid Meaningless glass effects
+- Avoid Gratuitous animation
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design07Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five additional incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Dark fantasy kingdom + Corporate utopia
+Style: Swiss design
+Mood: Curious
+Palette: Paper white and ink black
+Typography: Old-style serif
+Shape language: Asymmetric cutouts
+Texture: Fine film grain
+Density: Balanced
+Layout: Split screen
+Imagery: Documentary photography
+Motion: Snappy interface feedback
+Tone: Optimistic
+Contrast: Soft tonal contrast
+Border treatment: Ornamental frames
+Lighting: Underexposed low key
+Material: Concrete
+Signature detail: Diagram arrows
+
+## Constraints
+- Avoid Generic SaaS gradients
+- Avoid Meaningless glass effects
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design08Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five additional incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Industrial dystopia
+Style: De Stijl + Neumorphism
+Mood: Energetic
+Palette: Victorian jewel tones
+Typography: Comic lettering
+Shape language: Arched frames
+Texture: Rough paper fibers
+Density: Airy
+Layout: Split screen
+Imagery: Generative particles
+Motion: Mechanical transitions
+Tone: Experimental
+Contrast: Low contrast
+Border treatment: Art Deco frames
+Lighting: Flat even lighting
+Material: Chrome
+Signature detail: Giant section numbers + Chrome orb
+
+## Constraints
+- Avoid Overloaded hero copy
+- Avoid Tiny primary actions
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design09Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five additional incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Neon megacity
+Style: Cottagecore
+Mood: Nostalgic
+Palette: Soft lavender and slate
+Typography: Newspaper headline
+Shape language: Strict rectangles
+Texture: Pixel dithering
+Density: Dashboard-dense
+Layout: Sidebar workspace
+Imagery: Studio product photography
+Motion: CRT flicker
+Tone: Poetic
+Contrast: Minimal-maximal contrast
+Border treatment: Pixel borders
+Lighting: Rim lighting
+Material: Plastic
+Signature detail: Dense footnotes
+
+## Constraints
+- Avoid Tiny primary actions
+- Avoid Gratuitous animation
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design10Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five additional incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Near future + Rococo
+Style: Blueprint
+Mood: Intimate
+Palette: Cobalt and lemon
+Typography: Monospace technical
+Shape language: Brutalist blocks
+Texture: Subtle gradient mesh
+Density: Dashboard-dense
+Layout: Layered collage
+Imagery: 3D chrome objects
+Motion: Glitch bursts
+Tone: Provocative
+Contrast: Vintage-future contrast
+Border treatment: Double-line borders
+Lighting: No lighting effects
+Material: Cardboard
+Signature detail: Sticker clusters
+
+## Constraints
+- Avoid Inconsistent icon styles
+- Avoid Hidden navigation
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
 export const designs: DesignRoute[] = [
   {
     slug: 'design-01',
@@ -205,5 +375,40 @@ export const designs: DesignRoute[] = [
     summary: 'Alien academia grid',
     generationPrompt: design05Prompt,
     component: Design05Page,
+  },
+  {
+    slug: 'design-06',
+    navLabel: 'Design 06',
+    summary: 'Retro VHS blueprint',
+    generationPrompt: design06Prompt,
+    component: Design06Page,
+  },
+  {
+    slug: 'design-07',
+    navLabel: 'Design 07',
+    summary: 'Fantasy corporate Swiss',
+    generationPrompt: design07Prompt,
+    component: Design07Page,
+  },
+  {
+    slug: 'design-08',
+    navLabel: 'Design 08',
+    summary: 'Dystopian jewel neumorph',
+    generationPrompt: design08Prompt,
+    component: Design08Page,
+  },
+  {
+    slug: 'design-09',
+    navLabel: 'Design 09',
+    summary: 'Megacity cottage dashboard',
+    generationPrompt: design09Prompt,
+    component: Design09Page,
+  },
+  {
+    slug: 'design-10',
+    navLabel: 'Design 10',
+    summary: 'Rococo blueprint collage',
+    generationPrompt: design10Prompt,
+    component: Design10Page,
   },
 ]

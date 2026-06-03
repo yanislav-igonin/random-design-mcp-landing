@@ -13,7 +13,7 @@ function renderAt(path: string) {
 }
 
 describe('Random Design landing routes', () => {
-  it('renders five navigation links', () => {
+  it('renders every navigation link', () => {
     renderAt('/design-01')
 
     for (const design of designs) {
