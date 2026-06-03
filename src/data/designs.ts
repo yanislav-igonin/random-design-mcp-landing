@@ -8,6 +8,11 @@ import { Design07Page } from '../pages/Design07Page'
 import { Design08Page } from '../pages/Design08Page'
 import { Design09Page } from '../pages/Design09Page'
 import { Design10Page } from '../pages/Design10Page'
+import { Design11Page } from '../pages/Design11Page'
+import { Design12Page } from '../pages/Design12Page'
+import { Design13Page } from '../pages/Design13Page'
+import { Design14Page } from '../pages/Design14Page'
+import { Design15Page } from '../pages/Design15Page'
 import type { DesignRoute } from '../types'
 
 const design01Prompt = `# Design Direction
@@ -340,6 +345,171 @@ Signature detail: Sticker clusters
 ## Frontend Design Prompt
 Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
 
+const design11Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five more incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Frutiger Aero + Roman Empire
+Style: Terminal UI + Grunge
+Mood: Focused
+Palette: Vaporwave pink and cyan
+Typography: Rounded sans
+Shape language: Mechanical joints
+Texture: Pixel dithering
+Density: Dashboard-dense
+Layout: Strict Swiss grid
+Imagery: 3D clay objects
+Motion: Expanding panels
+Tone: Irreverent
+Contrast: Matte-gloss contrast
+Border treatment: Inset panel borders
+Lighting: Cold fluorescent
+Material: Chrome
+Signature detail: Chrome orb
+
+## Constraints
+- Avoid Long unreadable line lengths
+- Avoid Unstructured spacing
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design12Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five more incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: 16-bit console
+Style: Graffiti-inspired + Monochrome photography
+Mood: Eccentric
+Palette: Art Deco black and champagne
+Typography: Sci-fi extended
+Shape language: Hexagonal motifs
+Texture: Rough paper fibers
+Density: Editorial rhythm
+Layout: Technical schematic
+Imagery: Collage cutouts
+Motion: Elastic micro-interactions
+Tone: Institutional
+Contrast: Warm-cold contrast
+Border treatment: Dashed technical borders
+Lighting: No lighting effects
+Material: Translucent plastic
+Signature detail: Blueprint measurement marks
+
+## Constraints
+- Avoid Too many font families
+- Avoid Low-contrast body text
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design13Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five more incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Dot-com futurism + Web 1.0
+Style: Terminal UI + Swiss design
+Mood: Otherworldly
+Palette: Paper white and ink black
+Typography: Oversized numerals
+Shape language: Organic blobs
+Texture: Rough paper fibers
+Density: Card-heavy
+Layout: Bento grid
+Imagery: Documentary photography
+Motion: Diagram drawing animation
+Tone: Poetic
+Contrast: Vintage-future contrast
+Border treatment: Hand-drawn borders
+Lighting: Neon bloom
+Material: Ink
+Signature detail: Diagram arrows
+
+## Constraints
+- Avoid Hidden navigation
+- Avoid Stock photography
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design14Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five more incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Medieval
+Style: Comic-book
+Mood: Authoritative
+Palette: Chocolate and mint
+Typography: High-contrast Didone
+Shape language: Hexagonal motifs
+Texture: Photocopier artifacts
+Density: Compact
+Layout: Staggered blocks
+Imagery: Oversized typography as imagery
+Motion: Smooth page morphs
+Tone: Irreverent
+Contrast: Extreme black-white contrast
+Border treatment: No borders
+Lighting: Bioluminescent glow
+Material: Plastic
+Signature detail: CRT scanlines + Chrome orb
+
+## Constraints
+- Avoid Tiny primary actions
+- Avoid Meaningless glass effects
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
+const design15Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design
+Audience: developers, designers, AI tool builders
+Priority: five more incompatible chaotic visual directions for the same product landing page
+
+## Generated Parameters
+Era: Renaissance
+Style: Technical manual + Corporate modernism
+Mood: Dreamlike
+Palette: Charcoal and acid green
+Typography: Oversized numerals
+Shape language: Fluid curves
+Texture: Blueprint grid
+Density: Content-first
+Layout: Strict Swiss grid
+Imagery: Monochrome photography
+Motion: Smooth page morphs
+Tone: Experimental
+Contrast: Complementary color contrast
+Border treatment: No borders
+Lighting: No lighting effects
+Material: Chrome
+Signature detail: Chrome orb + Cropped corner brackets
+
+## Constraints
+- Avoid Stock photography
+- Avoid Overloaded hero copy
+
+## Frontend Design Prompt
+Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
+
 export const designs: DesignRoute[] = [
   {
     slug: 'design-01',
@@ -410,5 +580,40 @@ export const designs: DesignRoute[] = [
     summary: 'Rococo blueprint collage',
     generationPrompt: design10Prompt,
     component: Design10Page,
+  },
+  {
+    slug: 'design-11',
+    navLabel: 'Design 11',
+    summary: 'Aero Roman terminal',
+    generationPrompt: design11Prompt,
+    component: Design11Page,
+  },
+  {
+    slug: 'design-12',
+    navLabel: 'Design 12',
+    summary: 'Console graffiti schematic',
+    generationPrompt: design12Prompt,
+    component: Design12Page,
+  },
+  {
+    slug: 'design-13',
+    navLabel: 'Design 13',
+    summary: 'Dot-com terminal bento',
+    generationPrompt: design13Prompt,
+    component: Design13Page,
+  },
+  {
+    slug: 'design-14',
+    navLabel: 'Design 14',
+    summary: 'Medieval comic mint',
+    generationPrompt: design14Prompt,
+    component: Design14Page,
+  },
+  {
+    slug: 'design-15',
+    navLabel: 'Design 15',
+    summary: 'Renaissance acid manual',
+    generationPrompt: design15Prompt,
+    component: Design15Page,
   },
 ]
