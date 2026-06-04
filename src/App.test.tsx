@@ -37,6 +37,6 @@ describe('Random Design landing routes', () => {
     expect(screen.getByRole('heading', { name: /Random Design MCP/i })).toBeInTheDocument()
     expect(screen.getByText(design.summary)).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /Generation Prompt/i })).toBeInTheDocument()
-    expect(screen.getByText(/Frontend Design Prompt/i)).toBeInTheDocument()
+    expect(screen.getByText(/Frontend Design Prompt|Core Concept/i)).toBeInTheDocument()
   })
 })

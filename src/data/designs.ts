@@ -13,6 +13,11 @@ import { Design12Page } from '../pages/Design12Page'
 import { Design13Page } from '../pages/Design13Page'
 import { Design14Page } from '../pages/Design14Page'
 import { Design15Page } from '../pages/Design15Page'
+import { Design16Page } from '../pages/Design16Page'
+import { Design17Page } from '../pages/Design17Page'
+import { Design18Page } from '../pages/Design18Page'
+import { Design19Page } from '../pages/Design19Page'
+import { Design20Page } from '../pages/Design20Page'
 import type { DesignRoute } from '../types'
 
 const design01Prompt = `# Design Direction
@@ -510,6 +515,241 @@ Signature detail: Chrome orb + Cropped corner brackets
 ## Frontend Design Prompt
 Create a frontend design using the direction above. Apply the generated visual language consistently while preserving usability, responsive behavior, accessible contrast, and clear hierarchy. Respect the supplied page context and avoid the listed anti-patterns.`
 
+const design16Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design MCP
+Audience: developers, designers, AI tool builders
+Priority: new distinct compatible visual direction for page 16 in a five-page batch
+
+## Core Concept
+Design a landing page for a Model Context Protocol server named Random Design MCP with a rebellious friendly point of view. Translate Interstellar civilization and Machine-control interface with status logic into Masonry grid, Blackletter accent, Black and electric cyan, and Micro charts in headers. Optimize for new distinct compatible visual direction for page 16 in a five-page batch.
+
+## Visual System
+- Era: Interstellar civilization
+- Style: Machine-control interface with status logic
+- Mood: Rebellious
+- Tone: Friendly
+- Palette: Black and electric cyan
+- Typography: Blackletter accent
+- Shape language: Layered panels
+- Texture: Restrained holographic accent foil
+- Material: Aluminum
+- Lighting: Chrome reflections
+- Contrast: Dark-on-light contrast
+
+## Composition
+- Layout: Masonry grid
+- Density: Sparse
+- Imagery: Technical diagrams
+- Signature detail: Micro charts in headers
+- First viewport: make the product, offer, or use case immediately visible; do not hide it behind generic atmosphere.
+
+## Interaction
+- Motion: Rare glitch accent, never body text
+- Border treatment: Mixed-weight borders
+- Keep motion purposeful, localized, and compatible with reduced-motion preferences.
+
+## Execution Rules
+- Build a usable frontend, not a moodboard.
+- Let the supplied context and priority override decorative choices.
+- Translate era and style into interface decisions, not literal props.
+- Use the signature detail once or twice as a memorable motif, not repeated decoration.
+- Preserve readable text, accessible contrast, responsive behavior, clear hierarchy, and non-overlapping UI.
+- If parameters clash, keep the boldest one or two traits as accents and make layout, typography, and navigation usable.
+
+## Avoid
+- Avoid Excessive rounded cards
+- Avoid Placeholder UI with fake content`
+
+const design17Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design MCP
+Audience: developers, designers, AI tool builders
+Priority: new distinct compatible visual direction for page 17 in a five-page batch
+
+## Core Concept
+Design a landing page for a Model Context Protocol server named Random Design MCP with a provocative institutional point of view. Translate Contemporary and De Stijl into Diagonal flow, Bauhaus geometric display, Paper white and ink black, and Cropped corner brackets + Tabular status strips. Optimize for new distinct compatible visual direction for page 17 in a five-page batch.
+
+## Visual System
+- Era: Contemporary
+- Style: De Stijl
+- Mood: Provocative
+- Tone: Institutional
+- Palette: Paper white and ink black
+- Typography: Bauhaus geometric display
+- Shape language: Asymmetric cutouts
+- Texture: Perfectly clean surfaces
+- Material: Brushed steel
+- Lighting: Studio softbox
+- Contrast: Textural contrast
+
+## Composition
+- Layout: Diagonal flow
+- Density: Compact
+- Imagery: Operational maps
+- Signature detail: Cropped corner brackets + Tabular status strips
+- First viewport: make the product, offer, or use case immediately visible; do not hide it behind generic atmosphere.
+
+## Interaction
+- Motion: Static
+- Border treatment: Embossed borders
+- Keep motion purposeful, localized, and compatible with reduced-motion preferences.
+
+## Execution Rules
+- Build a usable frontend, not a moodboard.
+- Let the supplied context and priority override decorative choices.
+- Translate era and style into interface decisions, not literal props.
+- Use the signature detail once or twice as a memorable motif, not repeated decoration.
+- Preserve readable text, accessible contrast, responsive behavior, clear hierarchy, and non-overlapping UI.
+- If parameters clash, keep the boldest one or two traits as accents and make layout, typography, and navigation usable.
+
+## Avoid
+- Avoid Gratuitous animation
+- Avoid Hero-only design with no product proof`
+
+const design18Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design MCP
+Audience: developers, designers, AI tool builders
+Priority: new distinct compatible visual direction for page 18 in a five-page batch
+
+## Core Concept
+Design a landing page for a Model Context Protocol server named Random Design MCP with a serious exploratory point of view. Translate Soviet modernism and Ops-console minimalism into Task-first dashboard workspace, Blackletter accent, Neon city night, and Dense footnotes. Optimize for new distinct compatible visual direction for page 18 in a five-page batch.
+
+## Visual System
+- Era: Soviet modernism
+- Style: Ops-console minimalism
+- Mood: Serious
+- Tone: Exploratory
+- Palette: Neon city night
+- Typography: Blackletter accent
+- Shape language: Strict rectangles
+- Texture: Plastic gloss
+- Material: CRT phosphor
+- Lighting: Candlelit warmth
+- Contrast: Light-on-dark contrast
+
+## Composition
+- Layout: Task-first dashboard workspace
+- Density: Compact
+- Imagery: 3D chrome objects
+- Signature detail: Dense footnotes
+- First viewport: make the product, offer, or use case immediately visible; do not hide it behind generic atmosphere.
+
+## Interaction
+- Motion: Contained ticker motion for secondary info
+- Border treatment: Thin solid borders
+- Keep motion purposeful, localized, and compatible with reduced-motion preferences.
+
+## Execution Rules
+- Build a usable frontend, not a moodboard.
+- Let the supplied context and priority override decorative choices.
+- Translate era and style into interface decisions, not literal props.
+- Use the signature detail once or twice as a memorable motif, not repeated decoration.
+- Preserve readable text, accessible contrast, responsive behavior, clear hierarchy, and non-overlapping UI.
+- If parameters clash, keep the boldest one or two traits as accents and make layout, typography, and navigation usable.
+
+## Avoid
+- Avoid Mobile-hostile fixed widths
+- Avoid Hero-only design with no product proof`
+
+const design19Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design MCP
+Audience: developers, designers, AI tool builders
+Priority: new distinct compatible visual direction for page 19 in a five-page batch
+
+## Core Concept
+Design a landing page for a Model Context Protocol server named Random Design MCP with an aggressive underground point of view. Translate Ancient Egypt and Cottagecore into Strict Swiss grid, Art Nouveau display, Terracotta and sand, and Dense footnotes. Optimize for new distinct compatible visual direction for page 19 in a five-page batch.
+
+## Visual System
+- Era: Ancient Egypt
+- Style: Cottagecore
+- Mood: Aggressive
+- Tone: Underground
+- Palette: Terracotta and sand
+- Typography: Art Nouveau display
+- Shape language: Sharp angular geometry
+- Texture: CRT scanlines
+- Material: Newsprint
+- Lighting: Bioluminescent glow
+- Contrast: Medium contrast
+
+## Composition
+- Layout: Strict Swiss grid
+- Density: Compact
+- Imagery: Cropped UI fragments
+- Signature detail: Dense footnotes
+- First viewport: make the product, offer, or use case immediately visible; do not hide it behind generic atmosphere.
+
+## Interaction
+- Motion: Rare glitch accent, never body text
+- Border treatment: Dashed technical borders
+- Keep motion purposeful, localized, and compatible with reduced-motion preferences.
+
+## Execution Rules
+- Build a usable frontend, not a moodboard.
+- Let the supplied context and priority override decorative choices.
+- Translate era and style into interface decisions, not literal props.
+- Use the signature detail once or twice as a memorable motif, not repeated decoration.
+- Preserve readable text, accessible contrast, responsive behavior, clear hierarchy, and non-overlapping UI.
+- If parameters clash, keep the boldest one or two traits as accents and make layout, typography, and navigation usable.
+
+## Avoid
+- Avoid Decorative hero that hides the product
+- Avoid Floating glass cards everywhere`
+
+const design20Prompt = `# Design Direction
+
+## Context
+Product type: landing page for a Model Context Protocol server named Random Design MCP
+Audience: developers, designers, AI tool builders
+Priority: new distinct compatible visual direction for page 20 in a five-page batch
+
+## Core Concept
+Design a landing page for a Model Context Protocol server named Random Design MCP with a warm exploratory point of view. Translate Rococo and Retro futurism into Map and list hybrid, Bauhaus geometric display, Warm ivory and oxblood, and Windowed desktop panels. Optimize for new distinct compatible visual direction for page 20 in a five-page batch.
+
+## Visual System
+- Era: Rococo
+- Style: Retro futurism
+- Mood: Warm
+- Tone: Exploratory
+- Palette: Warm ivory and oxblood
+- Typography: Bauhaus geometric display
+- Shape language: Soft rounded geometry
+- Texture: Polished chrome
+- Material: Enamel signage
+- Lighting: Rim lighting
+- Contrast: Dark-on-light contrast
+
+## Composition
+- Layout: Map and list hybrid
+- Density: Layered
+- Imagery: Isometric scenes
+- Signature detail: Windowed desktop panels
+- First viewport: make the product, offer, or use case immediately visible; do not hide it behind generic atmosphere.
+
+## Interaction
+- Motion: Layered depth movement
+- Border treatment: Cropped corner frames
+- Keep motion purposeful, localized, and compatible with reduced-motion preferences.
+
+## Execution Rules
+- Build a usable frontend, not a moodboard.
+- Let the supplied context and priority override decorative choices.
+- Translate era and style into interface decisions, not literal props.
+- Use the signature detail once or twice as a memorable motif, not repeated decoration.
+- Preserve readable text, accessible contrast, responsive behavior, clear hierarchy, and non-overlapping UI.
+- If parameters clash, keep the boldest one or two traits as accents and make layout, typography, and navigation usable.
+
+## Avoid
+- Avoid Decorative hero that hides the product
+- Avoid Repetitive card grids`
+
 export const designs: DesignRoute[] = [
   {
     slug: 'design-01',
@@ -615,5 +855,40 @@ export const designs: DesignRoute[] = [
     summary: 'Renaissance acid manual',
     generationPrompt: design15Prompt,
     component: Design15Page,
+  },
+  {
+    slug: 'design-16',
+    navLabel: 'Design 16',
+    summary: 'Interstellar control masonry',
+    generationPrompt: design16Prompt,
+    component: Design16Page,
+  },
+  {
+    slug: 'design-17',
+    navLabel: 'Design 17',
+    summary: 'De Stijl ops diagonal',
+    generationPrompt: design17Prompt,
+    component: Design17Page,
+  },
+  {
+    slug: 'design-18',
+    navLabel: 'Design 18',
+    summary: 'Soviet neon console',
+    generationPrompt: design18Prompt,
+    component: Design18Page,
+  },
+  {
+    slug: 'design-19',
+    navLabel: 'Design 19',
+    summary: 'Terracotta Swiss notes',
+    generationPrompt: design19Prompt,
+    component: Design19Page,
+  },
+  {
+    slug: 'design-20',
+    navLabel: 'Design 20',
+    summary: 'Rococo retro map',
+    generationPrompt: design20Prompt,
+    component: Design20Page,
   },
 ]
