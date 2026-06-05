@@ -24,6 +24,15 @@ describe('Random Design landing routes', () => {
     }
   })
 
+  it('links to the Random Design MCP GitHub repository', () => {
+    renderAt('/design-01')
+
+    expect(screen.getByRole('link', { name: /Random Design MCP source on GitHub/i })).toHaveAttribute(
+      'href',
+      'https://github.com/yanislav-igonin/random-design-mcp',
+    )
+  })
+
   it('redirects root to Design 01 content', () => {
     renderAt('/')
 

@@ -2,6 +2,9 @@
   "name": "random-design-mcp-landing",
   "private": true,
   "version": "0.1.0",
+  "description": "Landing page gallery for Random Design MCP.",
+  "homepage": "https://random-design-mcp.h0b0.dev",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
