@@ -677,6 +677,146 @@ a {
   border-bottom: 3px solid;
 }
 
+.rd21-surface {
+  background-image:
+    linear-gradient(rgba(244, 244, 241, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 244, 241, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 82% 14%, rgba(244, 244, 241, 0.08), transparent 24%);
+  background-size: 36px 36px, 36px 36px, 100% 100%;
+}
+
+.rd21-frame {
+  box-shadow:
+    inset 0 0 0 8px rgba(244, 244, 241, 0.025),
+    0 22px 70px rgba(0, 0, 0, 0.38);
+}
+
+.rd21-fabric {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(244, 244, 241, 0.055) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(0deg, rgba(244, 244, 241, 0.035) 0 1px, transparent 1px 7px);
+}
+
+.rd22-schematic {
+  background-image:
+    linear-gradient(rgba(23, 21, 31, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 21, 31, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.rd22-pixel {
+  border: 2px solid #17151f;
+  box-shadow: 6px 6px 0 #17151f;
+}
+
+.rd22-holo {
+  background:
+    linear-gradient(120deg, #ffd9f7, #c9fbff 24%, #f8ffd1 48%, #d8d1ff 72%, #fffefa),
+    repeating-linear-gradient(0deg, rgba(23, 21, 31, 0.08) 0 1px, transparent 1px 4px);
+}
+
+.rd22-macro {
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 36% 30%, #fffefa, transparent 12%),
+    radial-gradient(circle at 62% 58%, rgba(255, 255, 255, 0.82), transparent 16%),
+    linear-gradient(135deg, #d2f7ff, #f8c6ff 38%, #f7ff9b 70%, #fffefa);
+  box-shadow: 0 22px 70px rgba(107, 87, 154, 0.28);
+}
+
+.rd23-weave {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(60, 13, 19, 0.05) 0 1px, transparent 1px 7px),
+    repeating-linear-gradient(0deg, rgba(60, 13, 19, 0.04) 0 1px, transparent 1px 9px);
+}
+
+.rd23-window {
+  border: 2px solid #7b1824;
+  box-shadow: 10px 10px 0 rgba(123, 24, 36, 0.18);
+}
+
+.rd23-clay {
+  border-radius: 999px 999px 28px 28px;
+  background:
+    radial-gradient(circle at 38% 24%, #fff7ea, transparent 18%),
+    linear-gradient(145deg, #b45b45, #7b1824 40%, #f2d7ba 68%, #8c543d);
+  box-shadow: 0 28px 80px rgba(60, 13, 19, 0.34);
+}
+
+.rd24-earth {
+  background-image:
+    radial-gradient(circle at 82% 16%, rgba(197, 162, 119, 0.2), transparent 24%),
+    linear-gradient(90deg, rgba(239, 224, 200, 0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 42px 42px;
+}
+
+.rd24-chrome {
+  background:
+    radial-gradient(circle at 36% 24%, #fff7ea, transparent 15%),
+    linear-gradient(135deg, #efe0c8, #4b4039 28%, #161210 48%, #c5a277 68%, #efe0c8);
+  clip-path: polygon(0 12%, 86% 0, 100% 78%, 18% 100%);
+}
+
+.rd24-empty {
+  background:
+    radial-gradient(circle at 50% 22%, rgba(239, 224, 200, 0.12), transparent 28%),
+    #30251d;
+}
+
+.rd24-timeline article {
+  position: relative;
+}
+
+.rd24-timeline article::before {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 58px;
+  width: 2px;
+  height: 18px;
+  background: rgba(239, 224, 200, 0.34);
+}
+
+.rd24-timeline article:last-child::before {
+  display: none;
+}
+
+.rd25-newsprint {
+  background-image:
+    radial-gradient(rgba(29, 23, 17, 0.11) 1px, transparent 1px),
+    repeating-linear-gradient(0deg, rgba(29, 23, 17, 0.06) 0 1px, transparent 1px 6px);
+  background-size: 9px 9px, 100% 100%;
+}
+
+.rd25-slice {
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 0 88%);
+}
+
+.rd25-diagram {
+  background:
+    linear-gradient(28deg, transparent 0 42%, rgba(130, 184, 173, 0.88) 42% 47%, transparent 47%),
+    linear-gradient(90deg, transparent 49%, rgba(29, 23, 17, 0.68) 50%, transparent 51%),
+    linear-gradient(0deg, transparent 49%, rgba(29, 23, 17, 0.68) 50%, transparent 51%),
+    radial-gradient(circle at 33% 58%, transparent 0 32px, rgba(29, 23, 17, 0.8) 33px 35px, transparent 36px),
+    #f7edcf;
+  animation: rd25-flicker 6s steps(2, end) infinite;
+}
+
+.rd25-quote {
+  position: relative;
+}
+
+.rd25-quote::before {
+  content: '"';
+  position: absolute;
+  top: -34px;
+  left: 12px;
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(130, 184, 173, 0.42);
+}
+
 @keyframes ticker {
   from {
     transform: translateX(0);
@@ -722,6 +862,18 @@ a {
 
   100% {
     transform: translate(-2px, 1px);
+  }
+}
+
+@keyframes rd25-flicker {
+  0%,
+  92%,
+  100% {
+    opacity: 1;
+  }
+
+  94% {
+    opacity: 0.88;
   }
 }
 

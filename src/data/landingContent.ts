@@ -32,7 +32,7 @@ export const landingContent = {
     'Build the same product story through a new visual system.',
   ],
   stats: [
-    { value: '20', label: 'generated variants' },
+    { value: '25', label: 'generated variants' },
     { value: '1', label: 'shared product narrative' },
     { value: 'N', label: 'future batches' },
   ],
